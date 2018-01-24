@@ -1,7 +1,7 @@
 {
   "name": "msbios/inputfilter",
   "description": "MSBios InputFilter",
-  "license": "GPL",
+  "license": "MIT",
   "keywords": [
     "php"
   ],
