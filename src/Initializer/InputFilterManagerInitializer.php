@@ -6,15 +6,15 @@
 namespace MSBios\InputFilter\Initializer;
 
 use Interop\Container\ContainerInterface;
-use MSBios\InputFilter\InputFilterPluginManagerAwareInterface;
+use MSBios\InputFilter\InputFilterManagerAwareInterface;
 use Zend\InputFilter\InputFilterPluginManager;
 use Zend\ServiceManager\Initializer\InitializerInterface;
 
 /**
- * Class InputFilterPluginManagerInitializer
+ * Class InputFilterManagerInitializer
  * @package MSBios\InputFilter\Initializer
  */
-class InputFilterPluginManagerInitializer implements InitializerInterface
+class InputFilterManagerInitializer implements InitializerInterface
 {
     /**
      * Initialize the given instance
@@ -25,8 +25,8 @@ class InputFilterPluginManagerInitializer implements InitializerInterface
      */
     public function __invoke(ContainerInterface $container, $instance)
     {
-        if ($instance instanceof InputFilterPluginManagerAwareInterface) {
-            $instance->setInputFilterPluginManager(
+        if ($instance instanceof InputFilterManagerAwareInterface) {
+            $instance->setInputFilterManager(
                 // $container->get('InputFilterManager') // by alias
                 $container->get(InputFilterPluginManager::class) // by registered class name
             );
@@ -35,7 +35,7 @@ class InputFilterPluginManagerInitializer implements InitializerInterface
 
     /**
      * @param $an_array
-     * @return InputFilterPluginManagerInitializer
+     * @return InputFilterManagerInitializer
      */
     public static function __set_state($an_array)
     {
