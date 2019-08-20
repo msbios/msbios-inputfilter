@@ -7,13 +7,6 @@
 namespace MSBios\InputFilter;
 
 return [
-
-    // 'service_manager' => [
-    //     'initializers' => [
-    //         new Initializer\InputFilterManagerInitializer
-    //     ]
-    // ],
-
     Module::class => [
         // ...
     ]

@@ -26,9 +26,9 @@ trait InputFilterManagerAwareTrait
 
     /**
      * @param InputFilterPluginManager $inputFilterManager
-     * @return $this
+     * @return InputFilterManagerAwareTrait
      */
-    public function setInputFilterManager(InputFilterPluginManager $inputFilterManager)
+    public function setInputFilterManager(InputFilterPluginManager $inputFilterManager): self
     {
         $this->inputFilterManager = $inputFilterManager;
         return $this;

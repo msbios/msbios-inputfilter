@@ -20,7 +20,7 @@ interface InputFilterManagerAwareInterface
 
     /**
      * @param InputFilterPluginManager $inputFilterManager
-     * @return $this
+     * @return InputFilterManagerAwareInterface
      */
-    public function setInputFilterManager(InputFilterPluginManager $inputFilterManager);
+    public function setInputFilterManager(InputFilterPluginManager $inputFilterManager): self;
 }
