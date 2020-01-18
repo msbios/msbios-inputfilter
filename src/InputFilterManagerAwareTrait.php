@@ -5,10 +5,12 @@
  */
 namespace MSBios\InputFilter;
 
-use Zend\InputFilter\InputFilterPluginManager;
+
+
+use Laminas\InputFilter\InputFilterPluginManager;
 
 /**
- * Trait InputFilterPluginManagerAwareTrait
+ * Trait InputFilterManagerAwareTrait
  * @package MSBios\InputFilter
  */
 trait InputFilterManagerAwareTrait

@@ -6,8 +6,8 @@
 namespace MSBios\InputFilter;
 
 use Interop\Container\ContainerInterface;
-use Zend\InputFilter\InputFilterPluginManager;
-use Zend\ServiceManager\Initializer\InitializerInterface;
+use Laminas\InputFilter\InputFilterPluginManager;
+use Laminas\ServiceManager\Initializer\InitializerInterface;
 
 /**
  * Class InputFilterManagerInitializer

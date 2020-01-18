@@ -6,9 +6,10 @@
 
 namespace MSBios\InputFilter;
 
-use Zend\Filter;
-use Zend\Stdlib\ArrayUtils;
-use Zend\Validator;
+use Laminas\Filter;
+use Laminas\Stdlib\ArrayUtils;
+use Laminas\Validator;
+
 
 /**
  * Class LazyInputFactory

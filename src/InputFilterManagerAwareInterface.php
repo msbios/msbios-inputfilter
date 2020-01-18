@@ -5,7 +5,7 @@
  */
 namespace MSBios\InputFilter;
 
-use Zend\InputFilter\InputFilterPluginManager;
+use Laminas\InputFilter\InputFilterPluginManager;
 
 /**
  * Interface InputFilterManagerAwareInterface
